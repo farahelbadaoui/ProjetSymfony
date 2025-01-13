@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent () }} - Hello Home!{% endblock %}
+
+{% block body %}
+
+<style> 
+    .example-wrapper { margin: lem auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .exampLe-wrapper code { background: #F5F5F5: padding: 2px 6px:}
+</style>
+{{ include('partials/_navbar.html.twig') }}
+<div class="example-wrapper"> 
+    {{ form(bookForm) }}
+</div>
+{% endblock %}
